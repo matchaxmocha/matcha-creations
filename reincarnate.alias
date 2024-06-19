@@ -1,0 +1,567 @@
+<drac2>
+race_roll = roll('1d100')
+sub_roll = roll("1d20")
+
+thumbnail_url = "https://media.discordapp.net/attachments/1223078326122319955/1250439710904549478/9dc7f98e7fbe6dcf54b09db69b1e5ad74.png?ex=666cec7b&is=666b9afb&hm=d486c78409512ddc3374f809379cd65d01a6fa2a4adcc97add12e72ab45c89dd&=&format=webp&quality=lossless&width=663&height=663"
+footer = "A Sudoria Alias | !reincarnate"
+
+args = argparse(["-table"] + &ARGS&)
+
+table_choice = args.last('table', "", str).lower()
+
+match table_choice:
+    case "aasimar":
+        if sub_roll in range(1, 5):
+            title = "You Become a Fallen Aasimar (Necrotic Shroud)!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(6, 13):
+            title = "You Become a Protector Aasimar (Radiant Soul)!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(14, 20):
+            title = "You Become a Scourge Aasimar (Radiant Consumption)!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "astral":
+        if sub_roll in range(1, 2):
+            title = "You Become an Autognome!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(3, 5):
+            title = "You Become a Giff!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(6, 8):
+            title = "You Become a Githyanki!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(9, 11):
+            title = "You Become a Githzerai!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(12, 14):
+            title = "You Become a Hazodee!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(15, 17):
+            title = "You Become a Plasmoid!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(18, 20):
+            title = "You Become a Thri-kreen!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "beastfolk":
+        if sub_roll in range(1, 2):
+            title = "You Become an Aarakocra!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll == 3:
+            title = "You Become a Grung!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(4, 5):
+            title = "You Become a Harengon!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(6, 7):
+            title = "You Become a Leonin!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(8, 9):
+            title = "You Become a Lizardfolk!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll == 10:
+            title = "You Become a Locathah!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(11, 12):
+            title = "You Become a Loxodon!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(13, 14):
+            title = "You Become a Kenku!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(15, 16):
+            title = "You Become an Owlin!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(17, 18):
+            title = "You Become a Tabaxi!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(19, 20):
+            title = "You Become a Tortle!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "dragonborn":
+        if sub_roll in range(1, 6):
+            title = "You Become a Chromatic Dragonborn!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments. You may pick your scale color based off what you roll"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(7, 9):
+            title = "You Become a Draconblood Dragonborn!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments. You may pick your scale color based off what you roll"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(10, 11):
+            title = "You Become a Gem Dragonborn!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments. You may pick your scale color based off what you roll"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(12, 17):
+            title = "You Become a Metallic Dragonborn!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments. You may pick your scale color based off what you roll"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(18, 20):
+            title = "You Become a Ravenite Dragonborn!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments. You may pick your scale color based off what you roll"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "dwarf":
+        if sub_roll in range(1, 5):
+            title = "You Become a Duergar!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(6, 13):
+            title = "You Become a Hill Dwarf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(14, 20):
+            title = "You Become a Mountain Dwarf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "elf":
+        if sub_roll == 1:
+            title = "You Become an Astral Elf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(2, 4):
+            title = "You Become a Dark Elf(Drow)!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(5, 6):
+            title = "You Become an Eladrin!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments. You may pick your season for this race"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(7, 10):
+            title = "You Become a High Elf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(11, 12):
+            title = "You Become a Pallid Elf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(13, 15):
+            title = "You Become a Sea Elf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll == 16:
+            title = "You Become a Shadar-kai!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(17, 20):
+            title = "You Become a Wood Elf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "fey":
+        if sub_roll in range(1, 5):
+            title = "You Become a Centaur!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(6, 10):
+            title = "You Become a Changeling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(11, 15):
+            title = "You Become a Fairy!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(16, 20):
+            title = "You Become a Satyr!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "genasi":
+        if sub_roll in range(1, 5):
+            title = "You Become an Air Genasi!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(6, 10):
+            title = "You Become an Earth Genasi!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(11, 15):
+            title = "You Become a Fire Genasi!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(16, 20):
+            title = "You Become a Water Genasi"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "gnome":
+        if sub_roll in range(1, 4):
+            title = "You Become a Deep Gnome!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(5, 11):
+            title = "You Become a Forest Gnome!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(12, 20):
+            title = "You Become a Rock Gnome!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "goblinoid":
+        if sub_roll in range(1, 6):
+            title = "You Become a Bugbear!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(7, 13):
+            title = "You Become a Goblin!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(14, 19):
+            title = "You Become a Hobgoblin!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll == 20:
+            title = "You Become a Verdan!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "gothic":
+        if sub_roll in range(1, 7):
+            title = "You Become a Dhampir!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(8, 14):
+            title = "You Become a Hexblood!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(15, 20):
+            title = "You Become a Reborn!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "half-elf":
+        if sub_roll in range(1, 6):
+            title = "You Become a Non-Variant Half-Elf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments. This is the base Half-Elf race as seen in the Player's Handbook"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(7, 9):
+            title = "You Become an Aquatic Half-Elf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(10, 12):
+            title = "You Become a Half-Drow!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(13, 16):
+            title = "You Become a High Half-Elf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(17, 20):
+            title = "You Become a Wood Half Elf!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "halfling":
+        if sub_roll in range(1, 4):
+            title = "You Become a Ghostwise Halfling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(5, 10):
+            title = "You Become a Lightfoot Halfling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(11, 14):
+            title = "You Become a Lotusden Halfling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(15, 20):
+            title = "You Become a Stout Halfling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "rare":
+        if sub_roll in range(1, 5):
+            title = "You Become a Kalashtar!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(6, 10):
+            title = "You Become a Simic Hybrid!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(11, 15):
+            title = "You Become a Vedalken!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(16, 20):
+            title = "You Become a Warforged!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "shifter":
+        if sub_roll in range(1, 5):
+            title = "You Become a Beasthide Shifter!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(6, 10):
+            title = "You Become a Longtooth Shifter!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(11, 15):
+            title = "You Become a Swiftstride Shifter!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(16, 20):
+            title = "You Become a Wildhunt Shifter!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "tiefling":
+        if sub_roll in range(1, 3):
+            title = "You Become an Asmodeus (Non-Variant) Tiefling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments. This is the Tiefling race as seen in the Player's Handbook"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(4, 5):
+            title = "You Become a Baalzebul Tiefling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(6, 7):
+            title = "You Become a Dispater Tiefling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(8, 9):
+            title = "You Become a Fierna Tiefling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(10, 11):
+            title = "You Become a Glasya Tiefling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(12, 13):
+            title = "You Become a Levistus Tiefling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(14, 15):
+            title = "You Become a Mammon Tiefling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(16, 17):
+            title = "You Become a Mephistopheles Tiefling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll in range(18, 19):
+            title = "You Become a Zariel Tiefling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments"
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if sub_roll == 20:
+            title = "You Become a Variant Tiefling!"
+            description = "This is a subtable and should follow a roll of `!reincarnate` with no arguments. This includes Feral Tiefling and Variant Feral Tiefling. You may choose the variant."
+            fields = f"Reincarnation Subtable Roll: 1d20 = {sub_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case "help":
+        return f'''embed -title "Help Page" -desc "This is an alias for rolling the reincarnate spell to determine your race/subrace. \n `!reincarnate` with no arguments should be run first. Each result should tell you if you need to roll on a subtable to determine your specific race or subrace." -thumb "{thumbnail_url}" -footer "{footer}"'''
+    case _:
+        if race_roll in range(1, 2):
+            title = "You Become an Aasimar!"
+            description = "You have become an Aasimar, please roll on the subtable with `!reincarnate aasimar` for your subrace"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll == 3:
+            title = "You Gain an Astral Lineage!"
+            description = "You have become a creature with an Astral Lineage, please roll on the subtable with `!reincarnate astral` for your race"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(4, 10):
+            title = "You Gain a Beastfolk Lineage"
+            description = "You have become a creature with a Beastfolk Lineage, please roll on the subtable with `!reincarnate beastfolk` for your race"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(11, 13):
+            title = "You Become a Dragonborn!"
+            description = "You have become a Dragonborn, please roll on the subtable with `!reincarnate dragonborn` for your dragon type"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(14, 22):
+            title = "You Become a Dwarf!"
+            description = "You have become a Dwarf, please roll on the subtable with `!reincarnate dwarf` for your subrace"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(23, 31):
+            title = "You Become an Elf!"
+            description = "You have become an Elf, please roll on the subtable with `!reincarnate elf` for your subrace"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(32, 33):
+            title = "You Gain a Fey Lineage!"
+            description = "You have become a creature with a Fey Lineage, please roll on the subtable with `!reincarnate fey` for your race"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(34, 36):
+            title = "You Become a Firbolg!"
+            description = "You have become a Firbolg"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(37, 38):
+            title = "You Become a Genasi!"
+            description = "You have become a Genasi, please roll on the subtable with `!reincarnate genasi` for your subrace"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(39, 44):
+            title = "You Become a Gnome!"
+            description = "You have become a Gnome, please roll on the subtable with `!reincarnate gnome` for your subrace"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(45, 49):
+            title = "You Become a Goblinoid!"
+            description = "You have become a Goblinoid, please roll on the subtable with `!reincarnate goblinoid` for your race"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(50, 52):
+            title = "You Become a Goliath!"
+            description = "You have become a Goliath"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll == 53:
+            title = "You Gain a Gothic Lineage!"
+            description = "You have become a creature with a Gothic Lineage, please roll on the subtable with `!reincarnate gothic` for your race"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(54, 57):
+            title = "You Become a Half-Elf!"
+            description = "You have become a Half-Elf, please roll on the subtable with `!reincarnate half` for your subrace"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(58, 61):
+            title = "You Become a Half Orc!"
+            description = "You have become a Half Orc"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(62, 69):
+            title = "You Become a Halfling!"
+            description = "You have become a Halfling, please roll on the subtable with `!reincarnate halfling` for your subrace"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(70, 79):
+            title = "You Become a Human!"
+            description = "You have become a Human, you may choose which variant"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(80, 83):
+            title = "You Become a Kobold!"
+            description = "You have become a Kobold"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(84, 86):
+            title = "You Become a Minotaur!"
+            description = "You have become a Minotaur"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(87, 90):
+            title = "You Become an Orc!"
+            description = "You have become an Orc"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll == 91:
+            title = "You Gain a Rare Lineage!"
+            description = "You have become a creature with a Rare Lineage, please roll on the subtable with `!reincarnate rare` for your race"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(92, 94):
+            title = "You Become a Shifter!"
+            description = "You have become a Shifter, please roll on the subtable with `!reincarnate shifter` for your subrace"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(95, 96):
+            title = "You Become a Tiefling!"
+            description = "You have become a Tiefling, please roll on the subtable with `!reincarnate tiefling` for your subrace"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(97, 98):
+            title = "You Become a Triton!"
+            description = "You have become a Triton"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+        if race_roll in range(99, 00):
+            title = "You Become a Yuan-ti!"
+            description = "You have become a Yuan-ti"
+            fields = f"Reincarnation Roll: 1d100 = {race_roll}"
+            return f'''embed -title "{title}" -desc "{description}" -f "{fields}" -thumb "{thumbnail_url}" -footer "{footer}"'''
+</drac2>
